@@ -1,0 +1,70 @@
+<script>
+
+    const PRECIO_HAMBURGUESA = 1235;
+    const PRECIO_BEBIDA = 1200;   
+    const PRECIO_COMBO = 2000;
+ 
+
+    const productos = [
+        {nombre: "Hamburguesa" , precio: 1235},
+        {nombre: "Bebida" , precio: 1200},
+        {nombre: "Combo" , precio: 2000}
+    ];
+
+
+    function compraHamburg(){
+
+        const cuantos = prompt("Cuántas hamburguesas desea?");
+        const totalComida = PRECIO_HAMBURGUESA * Number(cuantos);
+        alert("El total es de $" + totalComida);
+
+    }
+
+    function compraBeb(){
+        const cuantos = prompt("Cuántas bebidas desea?");
+        const totalBebida = PRECIO_BEBIDA * Number(cuantos);
+        alert("El total es de $" + totalBebida);
+    }
+
+    function compraCombo(){
+        const cuantos = prompt("Cuántos combos desea?");
+        const totalCombo = PRECIO_COMBO * Number(cuantos);
+        alert("El total es de $" + totalCombo)
+    }
+
+        function operacion(op){
+            switch(op){
+                case "1":{
+                    compraHamburg();
+                    break;
+
+                }
+                case "2":{
+                    compraBeb();
+                    break;
+
+                }
+                case "3":{
+                    compraCombo();
+                    break;
+                }
+                default: 
+                console.log(llamarAction());
+
+            }
+        }
+
+function llamarAction(){
+    const op = prompt(`Qué desea comprar
+
+    1 - Comprar hamburguesa.
+    2 - Comprar bebida.
+    3 - Comprar combo.
+    `);
+
+    operacion(op);
+}
+llamarAction();
+
+
+</script>
