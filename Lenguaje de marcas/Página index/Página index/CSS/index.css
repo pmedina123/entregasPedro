@@ -1,0 +1,36 @@
+#imagenFondo{
+    margin: 0%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.651), rgba(0, 0, 0, 0.712)), url('wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#logo{
+    display: block;
+    height: 250px;
+    margin-top: -5%;
+}
+
+#datosCliente{
+    float: right;
+}
+
+#titulo{
+    color: red;
+    text-align: center;
+}
+
+#aside1{
+    float: right;
+    margin-top: -220px;
+    margin-right: 50px;
+}
+
+#aside2{
+    float: right;
+    margin-top: -80px;
+    margin-right: 92px;
+}

@@ -1,0 +1,140 @@
+
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+}
+
+/* Header */
+header {
+    background-color: #f39c12;
+    padding: 20px 40px;
+    text-align: center;
+    color: white;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+
+/* Título de la página */
+#titulo {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Sección de producto en oferta */
+#producto-oferta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#producto-oferta h2 {
+    font-size: 28px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+/* Estilo del producto */
+.producto {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 1200px;
+}
+
+#producto-imagen {
+    width: 500px;
+    height: auto;
+}
+
+.detalles {
+    max-width: 500px;
+    text-align: left;
+}
+
+#nombre-producto {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#descripcion-producto {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #7f8c8d;
+}
+
+#precio-original {
+    text-decoration: line-through;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #e74c3c;
+}
+
+#precio-oferta {
+    font-size: 24px;
+    font-weight: bold;
+    color: #27ae60;
+    margin-bottom: 20px;
+}
+
+button#comprar {
+    padding: 12px 25px;
+    font-size: 18px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button#comprar:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+.footer {
+    background-color: #2c3e50;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+#enlacesFooter ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+#enlacesFooter li a {
+    color: white;
+    text-decoration: none;
+}
+
+#enlacesFooter li a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 10px;
+    font-size: 14px;
+}

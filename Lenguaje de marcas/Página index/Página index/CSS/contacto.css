@@ -1,0 +1,87 @@
+/* Reseteo de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #f39c12;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Sección de información */
+#informacion {
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+#informacion h2 {
+    font-size: 28px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+#informacion p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Sección de contacto */
+#contacto {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+#contacto h2 {
+    font-size: 28px;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+#contacto p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contacto-info {
+    font-size: 18px;
+}
+
+/* Mapa */
+#mapa {
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 40px;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="../iconoBananero.png">
+    <title>Sobre Nosotros - Bananero Juegos</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+</head>
+<body style="background-color: rgb(211, 211, 40);">
+    
+    <header>
+        <h1>Sobre Nosotros</h1>
+        <a href="index.html"><img src="logobananero.png" alt="Logo Bananero Juegos"></a>
+    </header>
+
+    <section id="informacion">
+        <h2>Bienvenidos a Bananero VideoJuegos</h2>
+        <p>En **Bananero VideoJuegos**, nos especializamos en ofrecer una amplia variedad de videojuegos para todas las plataformas, desde las más nuevas hasta las clásicas. Nuestra misión es ofrecerte las mejores ofertas y una experiencia de compra única.</p>
+        <p>Contamos con un equipo apasionado por los videojuegos y siempre estamos dispuestos a ayudarte a encontrar el juego perfecto para ti. Ya sea que seas un fanático de los juegos de aventura, acción, carreras o deportes, en Bananero Juegos tenemos lo que necesitas.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contactános</h2>
+        <p>Si tenés alguna duda o pregunta, no dudes en ponerte en contacto con nosotros. Estaremos encantados de ayudarte.</p>
+        <div class="contacto-info">
+            <p><strong>Teléfono:</strong> <a href="tel:+123456789">+123 456 789</a></p>
+        </div>
+    </section>
+
+    <section id="ubicacion">
+        <h2>¿Dónde estamos?</h2>
+        <p>Visitános en nuestra tienda física. Acá te dejamos un mapa para que puedas encontrarnos fácilmente:</p>
+
+        <div id="mapa" style="width: 100%; height: 400px;"></div>
+
+        <script>
+            function initMap() {
+                var ubicacion = { lat: 40.7128, lng: -74.0060 };  // Cambia las coordenadas a la ubicación de tu tienda
+                var mapa = new google.maps.Map(document.getElementById('mapa'), {
+                    zoom: 14,
+                    center: ubicacion
+                });
+
+                var marcador = new google.maps.Marker({
+                    position: ubicacion,
+                    map: mapa,
+                    title: 'Nuestra tienda'
+                });
+            }
+        </script>
+    </section>
+
+    <footer class="footer">
+
+
+
+        <div id="enlacesFooter">
+            <ul class="li-links">
+
+            
+                <li><p><a href="../contacto.html">Más sobre nosotros</a></p></li>
+                <li><p><a href="../contacto.html">Dónde nos encontramos</a></p></li>
+                <li><p><a href="">Email:bananerojuegos@yahoo.ar</a></p></li>
+            </ul>
+        </div>
+
+        <p class="copyright">@PedroMedina</p>
+
+
+
+    </footer>   
+</body>
+</html>
