@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   carrito.forEach(producto => agregarAlDOM(producto));
   actualizarTotal();
-
+ 
   botones.forEach(boton => {
     boton.addEventListener('click', () => {
       const nombre = boton.getAttribute('data-nombre');
